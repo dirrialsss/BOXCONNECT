@@ -1,104 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Box Connect</title>
 
-    <!-- Загальні стилі -->
-    <link rel="stylesheet" href="./css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Box Connect</title>
 
-    <!-- Стилі для головної сторінки -->
-    <link rel="stylesheet" href="./css/home.css" />
+  <!-- Загальні стилі -->
+  <link rel="stylesheet" href="./css/style.css" />
 
-    <!-- Іконки та шрифти -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Стилі для головної сторінки -->
+  <link rel="stylesheet" href="./css/home.css" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <script defer src="./js/script.js"></script>
-  </head>
-  <body>
-    <!-- Хедер (спільний для всіх сторінок) -->
-    <header class="site-header">
-      <div class="header-container">
-        <div class="logo">
-          <img src="./assets/icons/logo.png" alt="logo" />
-          <span>BOX <span class="highlight">CONNECT</span></span>
-        </div>
-        <nav class="nav-menu">
-          <a href="./index.html" class="active">Home</a>
-          <a href="#">Sparring Search</a>
-          <a href="#">Reviews</a>
-        </nav>
-        <div class="profile">
-          <a href="./profile.html"><i class="fa-regular fa-user"></i> My Profile</a>
-        </div>
+  <!-- Іконки та шрифти -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+  <!-- Хедер (спільний для всіх сторінок) -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="./assets/icons/logo.png" alt="logo" />
+        <span>BOX <span class="highlight">CONNECT</span></span>
       </div>
-    </header>
+      <nav class="nav-menu">
+        <a href="./index.html" class="active">Home</a>
+        <a href="#">Sparring Search</a>
+        <a href="#">Reviews</a>
+      </nav>
+      <div class="profile">
+        <a href="./profile.html"><i class="fa-regular fa-user"></i> My Profile</a>
+      </div>
+    </div>
+  </header>
 
-    <!-- 🟡 Головна секція -->
-    <section class="hero-section">
-      <div class="hero-content">
-        <div class="hero-text">
-          <div class="highlight-bar"></div>
-          <div class="hero-text-content">
-            <p>
-              <strong>BUILD INTERNATIONAL EXPERIENCE,</strong> MEET NEW TRAINING PARTNERS, AND PLAN YOUR NEXT SPARRING SESSION — ALL IN ONE PLACE.
-            </p>
-            <div class="hero-buttons">
-              <a href="./search.html" class="btn-primary">Find a partner</a>
-              <a href="#about" class="btn-secondary">Details</a>
-              
+  <!-- 🟡 Головна секція -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="highlight-bar"></div>
+        <div class="hero-text-content">
+          <p>
+            <strong>BUILD INTERNATIONAL EXPERIENCE,</strong> MEET NEW TRAINING PARTNERS, AND PLAN YOUR NEXT SPARRING
+            SESSION — ALL IN ONE PLACE.
+          </p>
+          <div class="hero-buttons">
+            <a href="./search.html" class="btn-primary">Find a partner</a>
+            <a href="#about" class="btn-secondary">Details</a>
 
-            </div>
-          </div>
-        </div>
 
-        <!-- Slideshow container ------>
-        <div class="slideshow-container">
-          <!-- Full-width images -->
-          <div class="mySlides fade">
-            <img src="./assets/images/slide1.jpg" alt="Boxers sparring">
-          </div>
-
-          <div class="mySlides fade">
-            <img src="./assets/images/slide2.jpg" alt="Boxers sparring">
-          </div>
-
-          <!-- Next and previous buttons -->
-          <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-          <button class="next" onclick="plusSlides(1)">&#10095;</button>
-
-          <!-- Dots container -->
-          <div class="dots-container">
-            <span class="dot active " onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- 🟡 Секція what is it -->
-     <section class="about-section" id="about">
+      <!-- Slideshow container ------>
+      <div class="slideshow-container">
+        <!-- Full-width images -->
+        <div class="mySlides fade">
+          <img src="./assets/images/slide1.jpg" alt="Boxers sparring">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./assets/images/slide2.jpg" alt="Boxers sparring">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+
+        <!-- Dots container -->
+        <div class="dots-container">
+          <span class="dot active " onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🟡 Секція what is it -->
+  <section class="about-section" id="about">
+    <div class="about-content">
       <h2 class="section-title">WHAT IS IT?</h2>
       <div class="about-box">
         <ul>
           <li>
             Box Connect is a platform for boxers across Europe to connect and organize sparring matches.<br>
-            Whether you're an amateur or an experienced fighter, you can easily find partners based on weight class, skill level, and location.
+            Whether you're an amateur or an experienced fighter, you can easily find partners based on weight class,
+            skill level, and location.
           </li>
           <li>
-            Our mission is to help boxers gain international experience, sharpen their abilities with purpose, and build meaningful connections beyond their home country.
+            Our mission is to help boxers gain international experience, sharpen their abilities with purpose, and build
+            meaningful connections beyond their home country.
           </li>
         </ul>
       </div>
-    </section>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works">
+    <img src="./assets/images/howItWorks.jpg" alt="Boxing gym" class="background-image">
+
+    <div class="content-overlay">
+      <h2>HOW IT WORKS</h2>
+      <div class="steps-container">
+        <div class="step-card">
+          <h3>1</h3>
+          <p>sign up or create a profile</p>
+        </div>
+        <div class="step-card">
+          <h3>2</h3>
+          <p>Use filters to find boxers by weight and experience</p>
+        </div>
+        <div class="step-card">
+          <h3>3</h3>
+          <p>Invite to sparring</p>
+        </div>
+        <div class="step-card">
+          <h3>4</h3>
+          <p>Gain valuable experience and leave feedback</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-    <script src="./js/home.js"></script>
-  </body>
+  <script src="./js/home.js"></script>
+</body>
+
 </html>
