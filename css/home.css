@@ -1,17 +1,18 @@
-
 /*section1 */
 
 .hero-section {
   background: #F8EEDF;
+  border-bottom: #FEF9E1 5px solid;
 }
 
 .hero-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 86vh;
+  min-height: 88vh;
   width: 100%;
 }
+
 .hero-text {
   max-width: 500px;
   display: flex;
@@ -19,12 +20,14 @@
   margin-bottom: 50px;
   margin-left: 120px;
 }
+
 .highlight-bar {
   width: 60px;
   background: #000;
   margin-right: 20px;
   height: 195px;
 }
+
 .hero-text-content {
   display: flex;
   flex-direction: column;
@@ -32,7 +35,7 @@
 
 .hero-text-content p {
   font-family: "Antonio", sans-serif;
-  font-size: 1.9rem; 
+  font-size: 1.9rem;
   font-weight: 350;
   line-height: 1.4;
   margin: 0 0 10px 0;
@@ -43,6 +46,7 @@
   gap: 60px;
   margin-top: 50px;
 }
+
 .btn-primary,
 .btn-secondary {
   padding: 15px 25px;
@@ -72,7 +76,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .mySlides img {
@@ -97,6 +101,7 @@
 .prev {
   left: 3px;
 }
+
 .next {
   right: 3px;
 }
@@ -128,17 +133,21 @@ html {
 }
 
 .about-section {
-  margin: 60px auto;
-  text-align: center;
+  border-bottom: 5px solid #FEF9E1;
+  padding: 60px auto;
+  scroll-margin-top: 140px;
+}
+
+.about-content {
   max-width: 900px;
-  min-height: 69vh;
-  
-  
+  margin: 0 auto;
+  text-align: center;
+  min-height: 80vh;
 }
 
 .section-title {
-  font-family: 'Oswald', sans-serif;
-  font-size: 2.5rem;
+  font-family: "Antonio", sans-serif;
+  font-size: 2.7rem;
   font-weight: 700;
   letter-spacing: 1px;
   text-align: left;
@@ -150,8 +159,8 @@ html {
   border-radius: 25px;
   padding: 30px;
   border-left: 5px solid #A31D1D;
-  border-right: 4px solid #000;
-  
+  border-right: 5px solid #000;
+
 }
 
 .about-box ul {
@@ -164,4 +173,74 @@ html {
 
 .about-box li {
   margin-bottom: 20px;
+}
+
+/*section3 - how it works*/
+.how-it-works {
+  margin: 20px;
+  position: relative;
+  background-color: #c4a97f;
+  min-height: 78vh;
+}
+
+.background-image {
+  position: absolute;
+  width: 63%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.content-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.how-it-works h2 {
+  margin: 90px 80px 50px auto;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-align: end;
+  font-family: "Antonio", sans-serif;
+}
+
+.steps-container {
+  display: flex;
+}
+
+.step-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 3px solid #000;
+  border-radius: 25px;
+  width: 250px;
+  height: 150px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+}
+
+.step-card h3 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  font-family: "Antonio", sans-serif;
+
+}
+
+.step-card p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #1b0d0d;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
 }
