@@ -189,10 +189,11 @@ html {
 
 /*section3 - how it works*/
 .how-it-works {
+ 
   margin: 20px;
   position: relative;
   background-color: #c4a97f;
-  min-height: 78vh;
+  height: 90vh;
 }
 
 .background-image {
@@ -207,7 +208,7 @@ html {
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: 40px 20px;
+  padding: 90px 20px;
   border-radius: 20px;
   margin: 0 auto;
   max-width: 1200px;
@@ -256,3 +257,40 @@ html {
 .step-card:hover {
   transform: translateY(-5px);
 }
+
+/* section 4 - map of europe */
+.countries-section {
+  border-top: 5px solid #FEF9E1;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  
+}
+.countries-container {
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  gap: 80px; 
+  margin-right: auto;
+  margin-left: 50px;
+}
+.map-img {
+  border: 2px solid #A31D1D;
+  width: 850px;
+  height: 750px;
+}
+.map-text {
+  font-family: "Antonio", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.boxers-icon {
+  width: 330px;
+  height: 230px;
+  margin-top: 20px;
+}
+
