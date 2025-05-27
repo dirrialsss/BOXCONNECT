@@ -75,10 +75,7 @@ body {
   background: #d30808;
   left: 0;
   bottom: -5px;
-
-
 }
-
 .profile a {
   text-decoration: none;
   font-size: 1.7rem;
@@ -86,9 +83,37 @@ body {
   margin-right: 90px;
 
 }
-
 .profile a:hover {
   color: #000;
 }
 
-/* -------------------------------------- end of the header */
+/* ---- end of the header ---- */
+/* footer */
+.site-footer {
+  background-color: #c4a97f;
+  padding: 20px 40px;
+  text-align: center;
+  position: relative;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: 70px;
+}
+.footer-text {
+  font-size: 1.3rem;
+  line-height: 70px; 
+}
+.footer-icons {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  display: flex;
+  gap: 15px;
+}
+.footer-icons img {
+  width: 40px;
+  height: 40px;
+}
+
