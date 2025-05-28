@@ -35,7 +35,7 @@
 
 .hero-text-content p {
   font-family: "Antonio", sans-serif;
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-weight: 350;
   line-height: 1.4;
   margin: 0 0 10px 0;
@@ -51,7 +51,7 @@
 .btn-secondary {
   padding: 15px 25px;
   border-radius: 20px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-decoration: none;
   display: inline-block;
 }
@@ -183,7 +183,6 @@ html {
   list-style-type: disc;
   padding-left: 30px;
   text-align: left;
-  font-size: 1.5rem;
   line-height: 1.7;
 }
 

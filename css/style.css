@@ -3,9 +3,8 @@ body {
   font-family: "Noto Sans", sans-serif;
   background: #F8EEDF;
   color: #000;
-  
+  font-size: 1.5rem;
 }
-
 .hero-section {
   margin-top: 80px;
 }
@@ -102,7 +101,6 @@ body {
   height: 70px;
 }
 .footer-text {
-  font-size: 1.3rem;
   line-height: 70px; 
 }
 .footer-icons {
