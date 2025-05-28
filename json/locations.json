@@ -1,0 +1,85 @@
+
+{
+  "countries": {
+    "ukraine": {
+      "name": "Ukraine",
+      "cities": ["Kyiv", "Lviv", "Kharkiv", "Odesa", "Dnipro"]
+    },
+    "poland": {
+      "name": "Poland",
+      "cities": ["Warsaw", "Krakow", "Wroclaw", "Gdansk", "Poznan"]
+    },
+    "germany": {
+      "name": "Germany",
+      "cities": ["Berlin", "Munich", "Hamburg", "Frankfurt", "Cologne"]
+    },
+    "france": {
+      "name": "France",
+      "cities": ["Paris", "Marseille", "Lyon", "Toulouse", "Nice"]
+    },
+    "italy": {
+      "name": "Italy",
+      "cities": ["Rome", "Milan", "Naples", "Turin", "Florence"]
+    },
+    "spain": {
+      "name": "Spain",
+      "cities": ["Madrid", "Barcelona", "Valencia", "Seville", "Bilbao"]
+    },
+    "netherlands": {
+      "name": "Netherlands",
+      "cities": ["Amsterdam", "Rotterdam", "The Hague", "Utrecht", "Eindhoven"]
+    },
+    "belgium": {
+      "name": "Belgium",
+      "cities": ["Brussels", "Antwerp", "Ghent", "Charleroi", "Liege"]
+    },
+    "sweden": {
+      "name": "Sweden",
+      "cities": ["Stockholm", "Gothenburg", "Malmo", "Uppsala", "Vasteras"]
+    },
+    "norway": {
+      "name": "Norway",
+      "cities": ["Oslo", "Bergen", "Trondheim", "Stavanger", "Tromso"]
+    },
+    "denmark": {
+      "name": "Denmark",
+      "cities": ["Copenhagen", "Aarhus", "Odense", "Aalborg", "Esbjerg"]
+    },
+    "finland": {
+      "name": "Finland",
+      "cities": ["Helsinki", "Espoo", "Tampere", "Vantaa", "Oulu"]
+    },
+    "czech_republic": {
+      "name": "Czech Republic",
+      "cities": ["Prague", "Brno", "Ostrava", "Plzen", "Liberec"]
+    },
+    "austria": {
+      "name": "Austria",
+      "cities": ["Vienna", "Graz", "Linz", "Salzburg", "Innsbruck"]
+    },
+    "switzerland": {
+      "name": "Switzerland",
+      "cities": ["Zurich", "Geneva", "Basel", "Bern", "Lausanne"]
+    },
+    "hungary": {
+      "name": "Hungary",
+      "cities": ["Budapest", "Debrecen", "Szeged", "Miskolc", "Pecs"]
+    },
+    "greece": {
+      "name": "Greece",
+      "cities": ["Athens", "Thessaloniki", "Patras", "Heraklion", "Larissa"]
+    },
+    "portugal": {
+      "name": "Portugal",
+      "cities": ["Lisbon", "Porto", "Vila Nova de Gaia", "Amadora", "Braga"]
+    },
+    "ireland": {
+      "name": "Ireland",
+      "cities": ["Dublin", "Cork", "Limerick", "Galway", "Waterford"]
+    },
+    "europe": {
+      "name": "All Europe",
+      "cities": []
+    }
+  }
+}

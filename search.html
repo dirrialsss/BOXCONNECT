@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sparring Search - Box Connect</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/search.css" />
+
+  <!-- Іконки та шрифти -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Хедер (спільний для всіх сторінок) -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="./assets/icons/logo.png" alt="logo" />
+        <span>BOX <span class="highlight">CONNECT</span></span>
+      </div>
+      <nav class="nav-menu">
+        <a href="./index.html">Home</a>
+        <a href="./search.html" class="active">Sparring Search</a>
+        <a href="#">Reviews</a>
+      </nav>
+      <div class="profile">
+        <a href="./profile.html"><i class="fa-regular fa-user"></i> My Profile</a>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="main-content"></div>
+  <!-- Секція фільтрів -->
+  <h1 class="filter-title">Choose Your Fighter by Preferences</h1>
+  <section class="filters">
+    <form id="filter-form">
+      <!-- Перший ряд фільтрів: Стать і Країна -->
+      <div class="filter-row">
+        <!-- Стать -->
+        <div class="filter-group">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender">
+            <option value=""></option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <!-- Країна -->
+        <div class="filter-group">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value=""></option>
+            <option value="europe">All Europe</option>
+            <!-- Країни будуть додані через JS -->
+          </select>
+        </div>
+
+      </div>
+      <!-- Другий ряд фільтрів: Вагова категорія і Місто -->
+      <div class="filter-row">
+        <div class="filter-group">
+          <label for="weight">Weight Category</label>
+          <select id="weight" name="weight">
+            <option value=""></option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="city">City</label>
+          <select id="city" name="city">
+            <option value=""></option>
+          </select>
+        </div>
+      </div>
+      <!-- Третій ряд фільтрів: Рівень досвіду і Стійка -->
+      <div class="filter-row">
+        <div class="filter-group">
+          <label for="experience">Experience Level</label>
+          <select id="experience" name="experience">
+            <option value=""></option>
+            <option value="beginner">Beginner</option>
+            <option value="amateur">Amateur</option>
+            <option value="professional">Professional</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="stance">Stance</label>
+          <select id="stance" name="stance">
+            <option value=""></option>
+            <option value="any">Any</option>
+            <option value="orthodox">Orthodox</option>
+            <option value="southpaw">Southpaw</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="search-button-container">
+        <button type="submit" class="search-button">Search</button>
+      </div>
+    </form>
+  </section>
+
+  </div>
+
+  <script src="js/locations.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/search.js"></script>
+</body>
+
+</html>

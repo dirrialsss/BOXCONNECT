@@ -1,0 +1,72 @@
+.filter-title {
+  text-align: center;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+}
+.filters {
+  padding: 40px 50px;
+  background: #E5D0AC;
+  margin: 0 auto; 
+  width: 70%;
+    /* background: 
+    linear-gradient(rgba(0, 0, 0, 0.7)), 
+    url('../assets/images/slide1.jpg') center/cover no-repeat;
+    
+  padding: 20px;
+  color: white;*/
+}
+.main-content {
+  margin-top: 70px;
+  padding: 20px;
+
+}
+label {
+  text-transform: uppercase;
+}
+.filter-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 50px;
+  margin-bottom: 15px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+    font-size: 1.5rem; 
+}
+.filter-group select,
+.filter-group input {
+  padding: 10px;
+  font-size: 1.5rem;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  height: 50px;
+  background-color: #a33636;
+  color: #fff;
+  text-align: center;
+}
+.search-button-container {
+  text-align: center;
+  margin-top: 40px;
+}
+.search-button {
+  padding: 10px 20px;
+  font-size: 1.7rem;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  background-color: #cdb182;
+  width: 300px;
+}
+.search-button:hover {
+  background-color: #b3986d; 
+}
+.search-button:active {
+  transform: translateY(1px); 
+}
