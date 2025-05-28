@@ -55,6 +55,9 @@
   text-decoration: none;
   display: inline-block;
 }
+.btn-primary,.btn-secondary:active{
+  transform: translateY(1px); 
+}
 
 .btn-primary {
   background: #8E1616;
@@ -76,6 +79,7 @@
   color: #000;
   transition: background-color 0.6s ease;
 }
+
 
 
 .slideshow-container {
