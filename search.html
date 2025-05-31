@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Sparring Search - Box Connect</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="./css/search.css" />
+  <link rel="stylesheet" href="css/search.css" />
 
   <!-- Іконки та шрифти -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
@@ -106,16 +106,85 @@
       </div>
 
       <div class="search-button-container">
-        <button type="submit" class="search-button">Search</button>
+        <button type="button" class="search-button">Search</button>
       </div>
     </form>
+
+
+  </section>
+  <!-- Секція результатів пошуку -->
+  <section class="search-results" id="search-results">
+    <div class="results-header">
+      <h2>Boxers Found: <span id="boxers-count">0</span></h2>
+    </div>
+    <!-- Шаблон для картки боксера -->
+    <template id="boxer-card-template">
+      <div class="boxer-card">
+        <div class="boxer-photo">
+          <img src="" alt="" class="boxer-photo-img">
+        </div>
+        <div class="boxer-header">
+          <h3 class="boxer-name"></h3>
+          <img src="" alt="" class="country-flag">
+        </div>
+        <!-- Єдина сітка для всіх даних -->
+        <div class="boxer-info-grid">
+          <img src="assets/icons/location.png" alt="Location" class="icon">
+          <a href="#" class="boxer-location" target="_blank" rel="noopener noreferrer"></a>
+          <img src="assets/icons/weight.png" alt="Weight" class="icon"><span class="boxer-weight"></span>
+          <img src="assets/icons/height.png" alt="Height" class="icon"><span class="boxer-height"></span>
+          <img src="assets/icons/age.png" alt="Age" class="icon"><span class="boxer-age"></span>
+          <img src="assets/icons/level.png" alt="Level" class="icon"><span class="boxer-level"></span>
+          <img src="assets/icons/stance.png" alt="Stance" class="icon"><span>Stance: <span
+              class="stance-badge boxer-stance"></span></span>
+          <button class="invite-button"><span>Invite to sparring</span></button>
+        </div>
+      </div>
+    </template>
+    <!-- Контейнер для карток -->
+    <div class="boxers-grid" id="boxers-container">
+      <!-- Картки додаються через JS -->
+    </div>
   </section>
 
+  <div id="invite-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-button">
+        <img src="assets/icons/close.png" alt="Close" class="close-icon">
+      </span>
+      <label>Date:
+        <input type="date" id="sparring-date" required>
+      </label>
+      <label>Time:
+        <input type="time" id="sparring-time" required>
+      </label>
+      <button id="confirm-invite">Send Invitation</button>
+    </div>
   </div>
 
-  <script src="js/locations.js"></script>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-text">
+        © 2025 Box Connect. All rights reserved.
+      </div>
+      <div class="footer-icons">
+        <a href="https://instagram.com" target="_blank">
+          <img src="assets/icons/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com">
+          <img src="assets/icons/facebook.png" alt="F icon" />
+        </a>
+        <a
+          href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJqXxmRzMdSvLStnctnTrqDHtHDJkPbWzZWPfQjfSlTTCmgmnbfQwHqcPTmcmgSgDgckjXB">
+          <img src="assets/icons/email.jpg" alt="email icon" />
+        </a>
+      </div>
+    </div>
+  </footer>
   <script src="js/script.js"></script>
-  <script src="js/search.js"></script>
+  <script type="module" src="js/search/search.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "ELSA NARHI",
+    "photo": "assets/boxers/photos/narhi.png",
+    "country": "Finland",
+    "flag": "assets/boxers/flags/finland.png",
+    "city": "Jyvaskyla",
+    "weight": "54 kg",
+    "height": "163 cm",
+    "age": 27,
+    "level": "Amateur",
+    "stance": "Southpaw",
+    "gender": "female"
+  },
+  {
+    "id": 2,
+    "name": "STANIMIRA PETROVA",
+    "photo": "assets/boxers/photos/petrova.png",
+    "country": "Bulgaria",
+    "flag": "assets/boxers/flags/bulgaria.png",
+    "city": "Sofia",
+    "weight": "54 kg",
+    "height": "170 cm",
+    "age": 34,
+    "level": "Amateur",
+    "stance": "Orthodox",
+    "gender": "female"
+  },
+  {
+    "id": 3,
+    "name": "INNA STATKEVYCH",
+    "photo": "assets/boxers/photos/statkevych.png",
+    "country": "Ukraine",
+    "flag": "assets/boxers/flags/ukraine.png",
+    "city": "Kyiv",
+    "weight": "54 kg",
+    "height": "166 cm",
+    "age": 26,
+    "level": "Amateur",
+    "stance": "Orthodox",
+    "gender": "female"
+  },
+    {
+    "id": 4,
+    "name": "EMMA JOKIAHO",
+    "photo": "assets/boxers/photos/jokiaho.png",
+    "country": "Finland",
+    "flag": "assets/boxers/flags/finland.png",
+    "city": "Tampere",
+    "weight": "54 kg",
+    "height": "164 cm",
+    "age": 28,
+    "level": "Amateur",
+    "stance": "Orthodox",
+    "gender": "female"
+  },
+    {
+    "id": 4,
+    "name": "JENNIFER LEHANE",
+    "photo": "assets/boxers/photos/lehane.png",
+    "country": "Ireland",
+    "flag": "assets/boxers/flags/ireland.png",
+    "city": "Ashbourne",
+    "weight": "54 kg",
+    "height": "160 cm",
+    "age": 23,
+    "level": "Amateur",
+    "stance": "Southpaw",
+    "gender": "female"
+  }
+]
