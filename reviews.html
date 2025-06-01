@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Box Connect - Reviews</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reviews.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+</head>
+
+<body>
+  <!-- Header -->
+  <!-- Хедер (спільний для всіх сторінок) -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="./assets/icons/logo.png" alt="logo" />
+        <span>BOX <span class="highlight">CONNECT</span></span>
+      </div>
+      <nav class="nav-menu">
+        <a href="./index.html">Home</a>
+        <a href="./search.html">Sparring Search</a>
+        <a href="./reviews.html" class="active">Reviews</a>
+      </nav>
+      <div class="profile">
+        <a href="./profile.html"><i class="fa-regular fa-user"></i> My Profile</a>
+      </div>
+    </div>
+  </header>
+  <main class="reviews-container">
+    <h2 class="reviews-title">-- REVIEWS OUR BOXERS --</h2>
+
+    <!-- Review Card 1 -->
+    <div class="review-card">
+      <img src="./assets/boxers/photos/muhammadiev.jpg" alt="SIIOVUSH MUKHAMMADIIEV photo" class="review-avatar">
+      <div class="review-content">
+        <div class="review-header">
+          <span class="review-name">
+            SIIOVUSH MUKHAMMADIIEV
+            <img src="./assets/boxers/flags/ukraine.png" alt="Flag of Ukraine" class="country-flag">
+          </span>
+          <span class="review-rating">5,0/5,0 <i class="fas fa-star"></i></span>
+        </div>
+        <p class="review-text truncated"
+          data-full-text="Good sparring session that's become a crucial part of my competition training! Got to work on my distance management and counter-punching against different styles. This level of sparring is exactly what I need to stay sharp and confident. Will definitely be back every week until my championship bout. Highly recommend for anyone serious about competing!">
+          Good sparring session that's become a crucial part of my competition training! Got to work on my distance
+          management and counter-punching against...
+        </p>
+        <div class="review-footer">
+          <button class="toggle-btn" onclick="toggleReview(this)">Show more</button>
+          <div class="review-date">22.03.25</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review Card 2 -->
+    <div class="review-card">
+      <img src="./assets/boxers/photos/bennama.png" alt="BILLAL BENNAMA photo" class="review-avatar">
+      <div class="review-content">
+        <div class="review-header">
+          <span class="review-name">
+            BILLAL BENNAMA
+            <img src="./assets/boxers/flags/france.png" alt="Flag of France" class="country-flag">
+          </span>
+          <span class="review-rating">4,8/5,0 <i class="fas fa-star"></i></span>
+        </div>
+        <p class="review-text truncated"
+          data-full-text="I was passing through Germany on business and used this website to find a sparring partner. Everything went perfectly! I quickly found several available partners in Berlin and booked a session within 24 hours. The local boxer I trained with was very welcoming and professional. It's amazing how this platform connects traveling boxers with local training partners. Highly recommend for anyone looking to maintain their boxing training while on the road!">
+          I was passing through Germany on business and used this website to find a sparring partner. Everything went
+          perfectly! I quickly found several available...
+        </p>
+        <div class="review-footer">
+          <button class="toggle-btn" onclick="toggleReview(this)">Show more</button>
+          <div class="review-date">15.07.24</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review Card 3 -->
+    <div class="review-card">
+      <img src="./assets/boxers/photos/lehane.png" alt="JENNIFER LEHANE photo" class="review-avatar">
+      <div class="review-content">
+        <div class="review-header">
+          <span class="review-name">
+            JENNIFER LEHANE
+            <img src="./assets/boxers/flags/ireland.png" alt="Flag of Ireland" class="country-flag">
+          </span>
+          <span class="review-rating">4,9/5,0 <i class="fas fa-star"></i></span>
+        </div>
+        <p class="review-text truncated"
+          data-full-text="Had my championship fight in just 3 days and arrived in the city after a long journey feeling stiff and out of rhythm. Desperately needed quality sparring to get my timing back and shake off the travel fatigue. Within hours I found an experienced sparring partner who understood my situation perfectly. Thanks to this platform, I felt prepared and ready when I stepped into the ring for my title fight.">
+          Had my championship fight in just 3 days and arrived in the city after a long journey feeling stiff and out of
+          rhythm. Desperately needed quality sparring...
+        </p>
+        <div class="review-footer">
+          <button class="toggle-btn" onclick="toggleReview(this)">Show more</button>
+          <div class="review-date">03.11.24</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feedback Box -->
+    <div class="feedback-box">
+      <p>Leave your feedback</p>
+      <textarea placeholder="Tell us about your experience..."></textarea>
+      <button class="send-btn">Send review</button>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-text">
+        © 2025 Box Connect. All rights reserved.
+      </div>
+      <div class="footer-icons">
+        <a href="https://instagram.com" target="_blank">
+          <img src="assets/icons/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com">
+          <img src="assets/icons/facebook.png" alt="F icon" />
+        </a>
+        <a
+          href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJqXxmRzMdSvLStnctnTrqDHtHDJkPbWzZWPfQjfSlTTCmgmnbfQwHqcPTmcmgSgDgckjXB">
+          <img src="assets/icons/email.jpg" alt="email icon" />
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/reviews.js"></script>
+</body>
+
+</html>

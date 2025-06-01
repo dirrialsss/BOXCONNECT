@@ -1,0 +1,164 @@
+.reviews-container {
+  margin: 80px auto 0;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-title {
+  text-align: center;
+  font-family: 'Antonio', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #6D2323;
+}
+
+.review-card {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background-color: #fff;
+  border: 2px solid #c4a97f;
+  border-radius: 25px;
+  padding: 25px;
+  margin-bottom: 40px;
+  width: 60%;
+}
+
+.review-avatar {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #A31D1D;
+  align-self: flex-start;
+
+}
+.review-content {
+  flex: 1;
+}
+
+.review-content p{
+  font-size: 1.2rem;;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #951616;
+  padding-bottom: 10px;
+}
+
+.review-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #d30808;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-rating {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #6D2323;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-text {
+  line-height: 1.6;
+  color:#000;
+  margin-bottom: 20px;
+}
+
+.review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-btn {
+  background-color: #ffffff;
+  color: #d30808;
+  border: none;
+  font-size: 1.3rem;
+  
+}
+
+.toggle-btn:hover {
+   text-decoration: underline;
+}
+
+.review-date {
+  color: #6D2323;
+  font-size: 1.5rem;
+  margin-left: 50px;
+  font-family: 'Antonio', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 700;
+
+}
+
+.feedback-box {
+  background: #fff;
+  border: 2px solid #6D2323;
+  border-radius: 20px;
+  padding:20px;
+  text-align: left;
+  margin-top: 40px;
+  width: 60%;
+}
+
+.feedback-box p {
+  font-size: 1.4rem;
+  color: #6D2323;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.feedback-box textarea {
+  width: 95%; 
+  min-height: 120px;
+  padding: 15px;
+  border: 2px solid #6D2323;
+  border-radius: 10px;
+  background-color: #d3bd9a;
+  font-size: 1.1rem;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+.feedback-box textarea:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+.feedback-box textarea::placeholder {
+  color: #3c3434;
+  font-family: "Noto Sans", sans-serif;
+  
+}
+
+.send-btn {
+  background-color: #a33636;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 1.4rem;
+  font-family: "Noto Sans", sans-serif;
+  margin-left: 10px;
+}
+
+.send-btn:hover {
+  background-color: #641313;
+}
+.country-flag {
+  width: 35px;
+  height: 25px;
+  border-radius: 3px;
+}

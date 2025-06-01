@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "avatar": "./assets/boxers/photos/jokiaho.png",
+    "name": "Alexander Usyk",
+    "rating": 5.0,
+    "text": [
+      "\"Дуже корисний спаринг! Професійний підхід.",
+      "Техніка на високому рівні. Рекомендую!\""
+    ],
+    "date": "22.06.21"
+  },
+  {
+    "id": 2,
+    "avatar": "./assets/boxers/photos/jokiaho.png",
+    "name": "Mike Tyson",
+    "rating": 4.5,
+    "text": [
+      "\"Дуже довгий відгук, який буде обрізаний...",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl.",
+      "Дякую за чудовий досвід!\""
+    ],
+    "date": "15.07.21"
+  }
+]
