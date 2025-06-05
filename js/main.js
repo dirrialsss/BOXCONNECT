@@ -1,6 +1,6 @@
-import { initSearchController } from './js/controller/searchController.js';
-import { initProfileController } from './js/controller/profileController.js';
-import { initReviewsController } from './js/controller/reviewsController.js';
+import { initSearchController } from './controller/searchController.js';
+import { initProfileController } from './controller/profileController.js';
+import { initReviewsController } from './controller/reviewsController.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const path = window.location.pathname;

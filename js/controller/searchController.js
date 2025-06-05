@@ -1,18 +1,18 @@
-import { fetchBoxers } from './js/model/boxersModel.js';
-import { fetchLocations } from './js/model/locationsModel.js';
-import { fetchWeights } from './js/model/weightsModel.js';
-import { Observable } from './js/model/observer.js';
+import { fetchBoxers } from '../model/boxersModel.js';
+import { fetchLocations } from '../model/locationsModel.js';
+import { fetchWeights } from '../model/weightsModel.js';
+import { Observable } from '../model/observer.js';
 
 import {
   populateCountryFilter,
   populateCityFilter,
   populateWeightFilter
-} from './js/view/filtersView.js';
+} from '../view/filtersView.js';
 
-import { renderBoxerCards } from './js/view/boxerCardView.js';
-import { setupInviteModal } from './js/view/modalView.js';
+import { renderBoxerCards } from '../view/boxerCardView.js';
+import { setupInviteModal } from '../view/modalView.js';
 
-import { CombinedFilter } from './js/controller/strategy.js';
+import { CombinedFilter } from './strategy.js';
 
 const filtersChanged = new Observable();
 
