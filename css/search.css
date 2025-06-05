@@ -12,12 +12,6 @@
   background: #E5D0AC;
   margin: 0 auto;
   width: 70%;
-  /* background: 
-    linear-gradient(rgba(0, 0, 0, 0.7)), 
-    url('../assets/images/slide1.jpg') center/cover no-repeat;
-    
-  padding: 20px;
-  color: white; */
 }
 
 .main-content {
@@ -53,7 +47,7 @@ label {
   padding: 10px;
   border: 3px solid #ffffff;
   border-radius: 5px;
-  height: 50px;
+  height: 52px;
   background-color: #a33636;
   color: #fff;
   text-align: center;
@@ -116,6 +110,7 @@ label {
   align-items: center;
   flex-direction: column;
   border: #b59a70 2px solid;
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .boxer-photo {
@@ -253,6 +248,7 @@ label {
 
 .close-button:hover {
   background-color: #641313;
+  color:white;
 }
 
 .hidden {

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Box Connect - My Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/profile.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="./assets/icons/logo.png" alt="logo" />
+        <span>BOX <span class="highlight">CONNECT</span></span>
+      </div>
+      <nav class="nav-menu">
+        <a href="./index.html">Home</a>
+        <a href="./search.html">Sparring Search</a>
+        <a href="./reviews.html">Reviews</a>
+      </nav>
+      <div class="profile">
+        <a href="./profile.html" class="active"><i class="fa-regular fa-user"></i> My Profile</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="profile-content">
+    <!-- My Profile Section -->
+    <section class="profile-section">
+      <h2>MY PROFILE</h2>
+      <div class="profile-card">
+        <div class="profile-header">
+          <div class="profile-avatar">
+            <img src="assets/boxers/photos/siukalo.jpg" alt="Profile Avatar" id="avatar">
+          </div>
+          <div class="profile-info">
+            <h3 id="profile-name">Diana Siukalo</h3>
+            <div class="status-badge">
+              <span class="active-status">active</span>
+              <img src="assets/boxers/flags/ukraine.png" alt="Flag of Ukraine" class="country-flag">
+            </div>
+            <span class="gender">female ♀️</span>
+          </div>
+        </div>
+        <div class="profile-details">
+          <div class="detail-row">
+            <span class="label">Country</span>
+            <span class="value" id="country">Ukraine</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">City</span>
+            <span class="value" id="city">Kyiv</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">Weight [kg]</span>
+            <span class="value" id="weight">54</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">Age</span>
+            <span class="value" id="age">19</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">Level</span>
+            <span class="value" id="level">Amateur</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">Stance</span>
+            <span class="value" id="stance">Southpaw</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">Instagram</span>
+            <span class="value" id="contact">diana.siukalo</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">Contact</span>
+            <span class="value" id="contact">+3800975432356</span>
+          </div>
+        </div>
+        <button class="edit-btn" id="editProfileBtn">Edit profile</button>
+      </div>
+    </section>
+    <!-- Sparrings Section -->
+    <section class="sparrings-section">
+      <h2>SPARRINGS</h2>
+      <div class="sparrings-tabs">
+        <button class="tab-btn active" data-tab="scheduled">scheduled</button>
+        <button class="tab-btn" data-tab="past">past</button>
+      </div>
+      <div class="sparrings-content">
+        <div class="tab-content active" id="scheduled">
+          <div class="sparring-item">
+            <h4>Elsa Narhi</h4>
+            <p>15.06.2025,18:00<br>Kyiv, Ukraine</p>
+            <div class="sparring-actions">
+              <button class="btn-finished">Mark as Finished</button>
+              <button class="btn-contact">Contact</button>
+            </div>
+          </div>
+          <div class="sparring-item">
+            <h4>Jennifer Lehane</h4>
+            <p>19.07.2025,15:00<br>Kyiv, Ukraine</p>
+            <div class="sparring-actions">
+              <button class="btn-finished">Mark as Finished</button>
+              <button class="btn-contact">Contact</button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="past">
+          <!-- Past sparrings will be shown here -->
+        </div>
+      </div>
+    </section>
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">
+          <img src="assets/icons/close.png" alt="Close" class="close-icon" />
+        </span>
+        <h3>-- Contact Info --</h3>
+
+        <div class="contact-item instagram">
+          <img src="assets/icons/instagram.png" alt="Instagram" class="contact-icon" />
+          <div class="contact-info">
+            <div class="contact-label">Instagram</div>
+            <p class="contact-value">
+              <a href="#" target="_blank">@insta</a>
+            </p>
+          </div>
+        </div>
+        <div class="contact-item phone">
+          <img src="assets/icons/phone.png" alt="Phone" class="contact-icon" />
+          <div class="contact-info">
+            <div class="contact-label">Phone</div>
+            <p class="contact-value">
+              <a href="tel:#">+000 000 000 000</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notifications Section -->
+    <section class="notifications-section">
+      <h2>NOTIFICATIONS <span class="notification-count">3</span></h2>
+      <ul class="notifications-list">
+        <li class="notification-item">
+          <p>Invite from <strong>Inna Statkevych</strong></p>
+          <p>12.08.2025, 19:00<br>Kyiv, Ukraine</p>
+          <div class="notification-actions">
+            <button class="btn-accept">accept</button>
+            <button class="btn-cancel">cancel</button>
+          </div>
+        </li>
+        <li class="notification-item">
+          <p><strong>Diana Petrenko</strong> accepted your sparring invitation.</p>
+          <p> 06.06.2025, 16:30<br>Cherkasy,Ukraine</p>
+          <div class="notification-actions">
+            <button class="btn-accept">OK</button>
+          </div>
+        </li>
+        <li class="notification-item">
+          <p><strong>Emma Jokiaho</strong> declined your sparring invitation.</p>
+          <p>10.07.2025, 13:00<br>Tampere,Finland</p>
+          <div class="notification-actions">
+            <button class="btn-accept">OK</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-text">
+        © 2025 Box Connect. All rights reserved.
+      </div>
+      <div class="footer-icons">
+        <a href="https://instagram.com" target="_blank">
+          <img src="assets/icons/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com">
+          <img src="assets/icons/facebook.png" alt="F icon" />
+        </a>
+        <a
+          href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJqXxmRzMdSvLStnctnTrqDHtHDJkPbWzZWPfQjfSlTTCmgmnbfQwHqcPTmcmgSgDgckjXB">
+          <img src="assets/icons/email.jpg" alt="email icon" />
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>

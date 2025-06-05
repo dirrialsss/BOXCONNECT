@@ -1,0 +1,75 @@
+├── .git
+├── assets
+│   ├── boxers
+│   │   ├── flags
+│   │   │   ├── bulgaria.png
+│   │   │   ├── england.png
+│   │   │   ├── finland.png
+│   │   │   ├── france.png
+│   │   │   ├── ireland.png
+│   │   │   └── ukraine.png
+│   │   └── photos
+│   │       ├── bennama.png
+│   │       ├── jokiaho.png
+│   │       ├── lehane.png
+│   │       ├── muhammadiev.jpg
+│   │       ├── narhi.png
+│   │       ├── petrova.png
+│   │       ├── siukalo.jpg
+│   │       ├── siukalo2.jpg
+│   │       └── statkevych.png
+│   ├── icons
+│   │   ├── age.png
+│   │   ├── boxing-gloves.png
+│   │   ├── close.png
+│   │   ├── email.jpg
+│   │   ├── facebook.png
+│   │   ├── height.png
+│   │   ├── icon1.png
+│   │   ├── icon2.png
+│   │   ├── instagram.png
+│   │   ├── level.png
+│   │   ├── location.png
+│   │   ├── logo.png
+│   │   ├── phone.png
+│   │   ├── stance.png
+│   │   └── weight.png
+│   └── images
+│       ├── europe.png
+│       ├── howItWorks.jpg
+│       ├── slide1.jpg
+│       └── slide2.jpg
+├── css
+│   ├── home.css
+│   ├── profile.css
+│   ├── reviews.css
+│   ├── search.css
+│   └── style.css
+├── index.html
+├── js
+│   ├── controller
+│   │   ├── profileController.js
+│   │   ├── reviewsController.js
+│   │   ├── searchController.js
+│   │   └── strategy.js
+│   ├── main.js
+│   ├── model
+│   │   ├── boxersModel.js
+│   │   ├── locationsModel.js
+│   │   ├── observer.js
+│   │   └── weightsModel.js
+│   └── view
+│       ├── boxerCardView.js
+│       ├── filtersView.js
+│       ├── modalView.js
+│       └── sliderView.js
+├── json
+│   ├── boxers.json
+│   ├── locations.json
+│   ├── reviews.json
+│   └── weights.json
+├── profile.html
+├── README.md
+├── reviews.html
+├── search.html
+└── tree.txt

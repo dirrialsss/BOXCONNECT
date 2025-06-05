@@ -11,7 +11,11 @@
     "age": 27,
     "level": "Amateur",
     "stance": "Southpaw",
-    "gender": "female"
+    "gender": "female",
+    "contacts": {
+      "instagram": "elza_athlete",
+      "phone": "+358401234567"
+    }
   },
   {
     "id": 2,
@@ -25,7 +29,11 @@
     "age": 34,
     "level": "Amateur",
     "stance": "Orthodox",
-    "gender": "female"
+    "gender": "female",
+    "contacts": {
+      "instagram": "stanimiranp",
+      "phone": "+359887654321"
+    }
   },
   {
     "id": 3,
@@ -39,9 +47,13 @@
     "age": 26,
     "level": "Amateur",
     "stance": "Orthodox",
-    "gender": "female"
+    "gender": "female",
+    "contacts": {
+      "instagram": "innastatkevych",
+      "phone": "+380501234567"
+    }
   },
-    {
+  {
     "id": 4,
     "name": "EMMA JOKIAHO",
     "photo": "assets/boxers/photos/jokiaho.png",
@@ -53,10 +65,14 @@
     "age": 28,
     "level": "Amateur",
     "stance": "Orthodox",
-    "gender": "female"
+    "gender": "female",
+    "contacts": {
+      "instagram": "emmajokiaho",
+      "phone": "+358501234567"
+    }
   },
-    {
-    "id": 4,
+  {
+    "id": 5,
     "name": "JENNIFER LEHANE",
     "photo": "assets/boxers/photos/lehane.png",
     "country": "Ireland",
@@ -67,6 +83,10 @@
     "age": 23,
     "level": "Amateur",
     "stance": "Southpaw",
-    "gender": "female"
+    "gender": "female",
+    "contacts": {
+      "instagram": "jenniferlehane",
+      "phone": "+353871234567"
+    }
   }
 ]
