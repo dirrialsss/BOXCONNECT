@@ -1,4 +1,4 @@
-import { showInviteModal } from './modalView.js';
+import { showInviteModal } from './js/modal/modalView.js';
 
 export function renderBoxerCards(boxers) {
   const container = document.getElementById('boxers-container');

@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Box Connect</title>
 
-  <!-- Загальні стилі -->
   <link rel="stylesheet" href="./css/style.css" />
 
   <!-- Стилі для головної сторінки -->
@@ -23,8 +22,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-
-  <script defer src="./js/script.js"></script>
 </head>
 
 <body>
@@ -170,7 +167,12 @@
   </footer>
 
 
-  <script src="./js/home.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module">
+  import { initSlider } from './js/view/sliderView.js';
+  initSlider();
+</script>
+
 </body>
 
 </html>

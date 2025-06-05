@@ -1,5 +1,5 @@
-import { fetchBoxers } from '../model/boxersModel.js';
-import { setupModalListeners, showContactModal } from '../view/modalView.js';
+import { fetchBoxers } from './model/boxersModel.js';
+import { setupModalListeners, showContactModal } from './view/modalView.js';
 
 let boxersData = [];
 
