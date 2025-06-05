@@ -2,10 +2,13 @@ import { initSearchController } from './controller/searchController.js';
 import { initProfileController } from './controller/profileController.js';
 import { initReviewsController } from './controller/reviewsController.js';
 
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const path = window.location.pathname;
 
-  if (path.endsWith('search.html')) {
+  if (path.endsWith('search.html')) { 
     initSearchController();
   } else if (path.endsWith('profile.html')) {
     initProfileController();
