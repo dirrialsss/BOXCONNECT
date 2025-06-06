@@ -16,7 +16,6 @@
 │   │       ├── narhi.png
 │   │       ├── petrova.png
 │   │       ├── siukalo.jpg
-│   │       ├── siukalo2.jpg
 │   │       └── statkevych.png
 │   ├── icons
 │   │   ├── age.png
