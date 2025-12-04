@@ -6,10 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Box Connect</title>
 
-  <link rel="stylesheet" href="./css/style.css" />
-
-  <!-- Стилі для головної сторінки -->
-  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
 
   <!-- Іконки та шрифти -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
@@ -22,21 +20,26 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-
 </head>
 
 <body>
-  <!-- Хедер (спільний для всіх сторінок) -->
+  <!-- Хедер -->
   <header class="site-header">
     <div class="header-container">
       <div class="logo">
         <img src="./assets/icons/logo.png" alt="logo" />
         <span>BOX <span class="highlight">CONNECT</span></span>
       </div>
+      <!-- Бургер-меню  -->
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
       <nav class="nav-menu">
         <a href="./index.html" class="active">Home</a>
         <a href="./search.html">Sparring Search</a>
         <a href="./reviews.html">Reviews</a>
+        <!-- Додаємо профіль у бургер-меню для мобільних -->
+        <a href="./profile.html" class="profile-menu-item"><i class="fa-regular fa-user"></i> My Profile</a>
       </nav>
       <div class="profile">
         <a href="./profile.html"><i class="fa-regular fa-user"></i> My Profile</a>
@@ -44,7 +47,7 @@
     </div>
   </header>
 
-  <!-- 🟡 Головна секція -->
+  <!--  Головна секція -->
   <section class="hero-section">
     <div class="hero-content">
       <div class="hero-text">
@@ -57,12 +60,9 @@
           <div class="hero-buttons">
             <a href="./search.html" class="btn-primary">Find a partner</a>
             <a href="#about" class="btn-secondary">Details</a>
-
-
           </div>
         </div>
       </div>
-
       <!-- Slideshow container ------>
       <div class="slideshow-container">
         <!-- Full-width images -->
@@ -87,7 +87,7 @@
     </div>
   </section>
 
-  <!-- 🟡 Секція what is it -->
+  <!-- Секція what is it -->
   <section class="about-section" id="about">
     <div class="about-content">
       <h2 class="section-title">WHAT IS IT?</h2>
@@ -169,12 +169,9 @@
 
 
   <script type="module" src="./js/main.js"></script>
-
   <script type="module">
   import { initSlider } from './js/view/sliderView.js';
   initSlider();
 </script>
-
 </body>
-
 </html>

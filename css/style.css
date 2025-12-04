@@ -1,14 +1,19 @@
+* {
+  box-sizing: border-box; 
+}
 body {
   margin: 0;
   font-family: "Noto Sans", sans-serif;
   background: #F8EEDF;
   color: #000;
   font-size: 1.5rem;
+  overflow-x: hidden; 
 }
 .hero-section {
   margin-top: 80px;
 }
 
+/* ==================== HEADER ==================== */
 .site-header {
   position: fixed;
   top: 0;
@@ -24,7 +29,8 @@ body {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  
+  max-width: 100%; 
+  overflow: hidden; 
 }
 
 .logo {
@@ -57,7 +63,6 @@ body {
   gap: 80px;
   margin-right: auto;
   margin-left: 200px;
-
 }
 
 .nav-menu a {
@@ -66,7 +71,9 @@ body {
   color: #2c2c2c;
   position: relative;
 }
-.nav-menu a:hover, .profile a:hover{
+
+.nav-menu a:hover,
+.profile a:hover {
   color: #ac2424;
 }
 
@@ -79,32 +86,51 @@ body {
   left: 0;
   bottom: -5px;
 }
+
 .profile a {
   text-decoration: none;
   font-size: 1.7rem;
   color: #2c2c2c;
   margin-right: 90px;
-
 }
 
+/* ==================== БУРГЕР-МЕНЮ ==================== */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #2c2c2c;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: auto;
+  z-index: 101;
+  transition: color 0.3s ease;
+}
 
-/* ---- end of the header ---- */
-/* footer */
+.menu-toggle:hover {
+  color: #ac2424;
+}
+
+/* ==================== FOOTER ==================== */
 .site-footer {
   background-color: #c4a97f;
   padding: 20px 40px;
   text-align: center;
   position: relative;
 }
+
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
   height: 70px;
 }
+
 .footer-text {
-  line-height: 70px; 
+  line-height: 70px;
 }
+
 .footer-icons {
   position: absolute;
   top: 15px;
@@ -112,8 +138,141 @@ body {
   display: flex;
   gap: 15px;
 }
+
 .footer-icons img {
   width: 40px;
   height: 40px;
+}
+.profile-menu-item {
+  display: none;
+}
+
+
+/* ==================== АДАПТИВНІСТЬ ==================== */
+@media (max-width: 767px) {
+  .profile-menu-item {
+    display: block;
+  }
+  .nav-menu.active {
+    display: flex;
+    position: fixed;
+    top: 75px;
+    right: 0;
+    width: 50%;
+    background-color: #c4a97f;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 25px;
+    /* margin: 0; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  
+  }
+  .menu-toggle.active i {
+    transform: rotate(90deg);
+  }
+  .menu-toggle i {
+    transition: transform 0.3s ease;
+  }
+  body {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  .profile{
+    display: none; 
+  }
+  .site-header {
+    padding: 10px 15px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box; 
+  }
+  .header-container {
+    justify-content: space-between;
+    position: relative;
+  }
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .logo span {
+    font-size: 1.6rem;
+    max-width: 150px; 
+    overflow: hidden; 
+    height: 100%; 
+    display: flex; 
+    align-items: center;
+  }
+  .menu-toggle {
+    display: block;
+    padding: 10px 30px;
+    font-size: 2rem; 
+  }
+  .nav-menu {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    right: 0; 
+    width: 200px; 
+    background-color: #c4a97f;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    gap: 15px;
+    margin: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+  }
+  .nav-menu a {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box; 
+  }
+  .nav-menu a.active::after {
+    bottom: 0;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .profile {
+    order: 3;
+    margin-left: auto;
+    margin-right: 15px;
+  }
+  .profile a {
+    margin-right: 0;
+    font-size: 1.1rem;
+    white-space: nowrap; 
+  }
+  .site-footer {
+    padding: 15px 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    max-width: 100%; 
+    overflow: hidden; 
+  }
+
+  .footer-text {
+    line-height: 1.1;
+    order: 2;
+    max-width: 100%; 
+  }
+
+  .footer-icons {
+    position: static;
+    order: 1;
+    justify-content: center;
+    max-width: 100%; 
+  }
 }
 

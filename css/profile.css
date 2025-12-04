@@ -372,3 +372,240 @@
 .cancel-btn:hover {
     background: #d32f2f;
 }
+
+
+@media (max-width: 767px) {
+  .profile-content {
+    grid-template-columns: 1fr;
+    margin: 100px 15px 40px;
+    gap: 30px;
+  }
+
+  .profile-section h2,
+  .sparrings-section h2,
+  .notifications-section h2 {
+    font-size: 1.8rem;
+    margin: 0 0 10px 0;
+  }
+
+  /* Моя профіль секція */
+  .profile-card {
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    padding: 0 0 15px 0;
+    text-align: center;
+  }
+
+  .profile-avatar,
+  .profile-avatar img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .profile-info h3 {
+    font-size: 1.4rem;
+    margin: 0 0 5px 0;
+  }
+
+  .status-badge {
+    font-size: 1.1rem;
+    justify-content: center;
+  }
+
+  .active-status {
+    font-size: 1rem;
+  }
+
+  .gender {
+    font-size: 1.1rem;
+  }
+
+  .profile-details {
+    padding: 0 15px;
+    margin: 10px 0;
+  }
+
+  .detail-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 2px 0;
+  }
+
+  .label,
+  .value {
+    font-size: 1.2rem;
+  }
+
+  .edit-btn {
+    padding: 10px 15px;
+    font-size: 1.4rem;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  /* Sparrings секція */
+  .sparrings-tabs {
+    border-radius: 15px;
+  }
+
+  .tab-btn {
+    padding: 8px 15px;
+    font-size: 1.3rem;
+  }
+
+  .sparrings-content {
+    min-height: auto;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .sparring-item {
+    flex-direction: column;
+    padding: 15px 10px;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .sparring-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+
+  .sparring-item p {
+    font-size: 1.1rem;
+  }
+
+  .sparring-actions {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .btn-finished,
+  .btn-contact {
+    padding: 8px 12px;
+    font-size: 1.2rem;
+    flex: 1;
+    max-width: 150px;
+  }
+
+  /* Модальне вікно */
+  .modal-content {
+    padding: 1.5rem;
+    margin: 5vh auto;
+    width: 95vw;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .contact-info {
+    text-align: center;
+    align-items: center;
+  }
+
+  /* Notifications секція */
+  .notifications-section {
+    margin-bottom: 40px;
+  }
+
+  .notification-count {
+    font-size: 1.5rem;
+    padding: 6px 12px;
+    margin-left: 5px;
+  }
+
+  .notifications-list {
+    padding: 10px 20px;
+    border-radius: 15px;
+  }
+
+  .notification-item p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .notification-actions {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .btn-accept,
+  .btn-cancel {
+    padding: 6px 15px;
+    font-size: 1.3rem;
+    min-width: 100px;
+  }
+  .profile-content {
+    margin: 20px 10px 10px;
+    gap: 20px;
+  }
+
+  .profile-section h2,
+  .sparrings-section h2,
+  .notifications-section h2 {
+    font-size: 1.6rem;
+    margin: 1px 10px 8px 10px;
+  }
+  .profile-card {
+    margin: 10px 10px 10px 10px;
+  }
+  .profile-avatar,
+  .profile-avatar img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .profile-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .detail-row {
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.1rem;
+  }
+
+  .label,
+  .value {
+    font-size: 1.1rem;
+  }
+
+ 
+
+  .sparring-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-finished,
+  .btn-contact {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .notification-item p {
+    font-size: 1.1rem;
+  }
+
+  .notification-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .btn-accept,
+  .btn-cancel {
+    width: 100%;
+  }
+
+}

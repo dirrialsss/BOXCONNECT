@@ -3,8 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Box Connect - Sparring Search</title>
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Спочатку спільні стилі -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Потім специфічні для сторінки -->
   <link rel="stylesheet" href="css/search.css" />
 
   <!-- Іконки та шрифти -->
@@ -23,22 +26,27 @@
 </head>
 
 <body>
-  <!-- Хедер (спільний для всіх сторінок) -->
+  <!-- Хедер  -->
   <header class="site-header">
     <div class="header-container">
       <div class="logo">
         <img src="./assets/icons/logo.png" alt="logo" />
         <span>BOX <span class="highlight">CONNECT</span></span>
       </div>
-      <nav class="nav-menu">
-        <a href="./index.html">Home</a>
-        <a href="./search.html" class="active">Sparring Search</a>
-        <a href="./reviews.html">Reviews</a>
-      </nav>
-      <div class="profile">
-        <a href="./profile.html"><i class="fa-regular fa-user"></i> My Profile</a>
-      </div>
+       <!-- Бургер-меню -->
+    <button class="menu-toggle" aria-label="Toggle menu" id="burger-menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="nav-menu">
+      <a href="./index.html">Home</a>
+      <a href="./search.html" class="active">Sparring Search</a>
+      <a href="./reviews.html">Reviews</a>
+      <a href="./profile.html" class="profile-menu-item"><i class="fa-regular fa-user"></i> My Profile</a>
+    </nav>
+    <div class="profile">
+      <a href="./profile.html"><i class="fa-regular fa-user"></i> My Profile</a>
     </div>
+  </div>
   </header>
 
 
@@ -166,7 +174,7 @@
     </div>
   </div>
   
-
+ <script type="module" src="./js/main.js"></script>
 
   <!-- Footer -->
   <footer class="site-footer">
@@ -189,6 +197,7 @@
     </div>
   </footer>
   <script type="module" src="./js/main.js"></script>
+  
 
 
 </body>

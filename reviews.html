@@ -29,18 +29,23 @@
         <img src="./assets/icons/logo.png" alt="logo" />
         <span>BOX <span class="highlight">CONNECT</span></span>
       </div>
-      <nav class="nav-menu">
-        <a href="./index.html">Home</a>
-        <a href="./search.html">Sparring Search</a>
-        <a href="./reviews.html" class="active">Reviews</a>
-      </nav>
-      <div class="profile">
-        <a href="./profile.html"><i class="fa-regular fa-user"></i> My Profile</a>
-      </div>
+       <!-- Бургер-меню -->
+    <button class="menu-toggle" aria-label="Toggle menu" id="burger-menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="nav-menu">
+      <a href="./index.html">Home</a>
+      <a href="./search.html" >Sparring Search</a>
+      <a href="./reviews.html" class="active">Reviews</a>
+      <a href="./profile.html" class="profile-menu-item"><i class="fa-regular fa-user"></i> My Profile</a>
+    </nav>
+    <div class="profile">
+      <a href="./profile.html"><i class="fa-regular fa-user"></i> My Profile</a>
+    </div>
     </div>
   </header>
   <main class="reviews-container">
-    <h2 class="reviews-title">-- REVIEWS OUR BOXERS --</h2>
+    <h2 class="reviews-title">-- REVIEWS FROM OUR BOXERS --</h2>
 
     <!-- Review Card 1 -->
     <div class="review-card">
@@ -51,7 +56,7 @@
             SIIOVUSH MUKHAMMADIIEV
             <img src="./assets/boxers/flags/ukraine.png" alt="Flag of Ukraine" class="country-flag">
           </span>
-          <span class="review-rating">5,0/5,0 <i class="fas fa-star"></i></span>
+          <span class="review-rating">5/5 <i class="fas fa-star"></i></span>
         </div>
         <p class="review-text truncated"
           data-full-text="Good sparring session that's become a crucial part of my competition training! Got to work on my distance management and counter-punching against different styles. This level of sparring is exactly what I need to stay sharp and confident. Will definitely be back every week until my championship bout. Highly recommend for anyone serious about competing!">
@@ -60,7 +65,7 @@
         </p>
         <div class="review-footer">
           <button class="toggle-btn" onclick="toggleReview(this)">Show more</button>
-          <div class="review-date">22.03.25</div>
+          <div class="review-date">22.03.24</div>
         </div>
       </div>
     </div>
@@ -74,7 +79,7 @@
             BILLAL BENNAMA
             <img src="./assets/boxers/flags/france.png" alt="Flag of France" class="country-flag">
           </span>
-          <span class="review-rating">4,8/5,0 <i class="fas fa-star"></i></span>
+          <span class="review-rating">5/5 <i class="fas fa-star"></i></span>
         </div>
         <p class="review-text truncated"
           data-full-text="I was passing through Germany on business and used this website to find a sparring partner. Everything went perfectly! I quickly found several available partners in Berlin and booked a session within 24 hours. The local boxer I trained with was very welcoming and professional. It's amazing how this platform connects traveling boxers with local training partners. Highly recommend for anyone looking to maintain their boxing training while on the road!">
@@ -97,7 +102,7 @@
             JENNIFER LEHANE
             <img src="./assets/boxers/flags/ireland.png" alt="Flag of Ireland" class="country-flag">
           </span>
-          <span class="review-rating">4,9/5,0 <i class="fas fa-star"></i></span>
+          <span class="review-rating">4/5 <i class="fas fa-star"></i></span>
         </div>
         <p class="review-text truncated"
           data-full-text="Had my championship fight in just 3 days and arrived in the city after a long journey feeling stiff and out of rhythm. Desperately needed quality sparring to get my timing back and shake off the travel fatigue. Within hours I found an experienced sparring partner who understood my situation perfectly. Thanks to this platform, I felt prepared and ready when I stepped into the ring for my title fight.">
@@ -112,11 +117,20 @@
     </div>
 
     <!-- Feedback Box -->
-    <div class="feedback-box">
-      <p>Leave your feedback</p>
-      <textarea placeholder="Tell us about your experience..."></textarea>
-      <button class="send-btn">Send review</button>
+<div class="feedback-box">
+  <div class="feedback-header">
+    <p>Leave your feedback</p>
+    <div class="star-rating">
+      <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 stars"></label>
+      <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars"></label>
+      <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 stars"></label>
+      <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 stars"></label>
+      <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star"></label>
     </div>
+  </div>
+  <textarea placeholder="Tell us about your experience..."></textarea>
+  <button class="send-btn">Send review</button>
+</div>
   </main>
   <!-- Footer -->
   <footer class="site-footer">

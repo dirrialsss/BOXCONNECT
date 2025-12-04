@@ -20,7 +20,7 @@ export function renderBoxerCards(boxers) {
     locationLink.target = '_blank'; // Відкриває у новій вкладці
 
     card.querySelector('.boxer-weight').textContent = 'Weight: ' + boxer.weight;
-    card.querySelector('.boxer-height').textContent = 'Height: ' + boxer.height + ' cm';
+    card.querySelector('.boxer-height').textContent = 'Height: ' + boxer.height;
     card.querySelector('.boxer-age').textContent = 'Age: ' + boxer.age + ' y.o.';
     card.querySelector('.boxer-level').textContent = 'Level: ' + boxer.level;
     card.querySelector('.boxer-stance').textContent = boxer.stance;
